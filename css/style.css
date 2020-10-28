@@ -81,6 +81,7 @@ body {
 
 .animation1 span {
   margin: 0 auto;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: 24%;
