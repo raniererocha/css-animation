@@ -1,0 +1,25 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+* ul, nav {
+    list-style: none;
+}
+* a {
+    text-decoration: none;
+    color: currentColor;
+    opacity: .7;
+    transition: opacity .2s ease-in;
+    cursor: pointer;
+    &:hover {
+        opacity: 1;
+        transition: opacity .2s ease-in;
+    }
+}
+body {
+    font-family: 'Fredoka One', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100vw;
+    height: 100vh;
+}

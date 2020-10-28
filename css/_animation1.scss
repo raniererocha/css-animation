@@ -1,0 +1,63 @@
+.animacao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    p {
+        margin-top: 5rem;
+        width: 27rem;
+        font-size: .9rem;
+
+        span {
+            color: red;
+            font-weight: bolder;
+            font-size: 105%;
+        }
+    }
+
+}
+.animation1 {
+   
+    display: flex;
+    margin-top: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    font-size: 6rem;
+    line-height: 80%;
+    letter-spacing: -.3rem;
+    text-align: center;
+
+    span{
+        margin: 0 auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+        width: 24%;
+        padding: 20px;
+        &:nth-child(1){
+            background-image: linear-gradient(to right, #d57eeb, #fccb90);
+            animation: cycle1 5s infinite ease;
+        }
+        &:nth-child(2){
+            background-image: linear-gradient(to right, #d57eeb, #fccb90);
+            animation: cycle1 5s infinite ease;
+            animation-delay: 1.66s;
+        }
+        &:nth-child(3){
+            background-image: linear-gradient(to right, #d57eeb, #fccb90);
+            animation: cycle1 5s infinite ease;
+            animation-delay: 3.32s;
+        }
+    }
+}
+@keyframes cycle1 {
+    0%, 100% {filter: invert(0%);}
+    25%, 75% {filter: invert(50%);}
+    50% {filter: invert(100%);}
+}
+

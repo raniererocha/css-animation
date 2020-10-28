@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* ul, nav {
+  list-style: none;
+}
+
+* a {
+  text-decoration: none;
+  color: currentColor;
+  opacity: .7;
+  -webkit-transition: opacity .2s ease-in;
+  transition: opacity .2s ease-in;
+  cursor: pointer;
+}
+
+* a:hover {
+  opacity: 1;
+  -webkit-transition: opacity .2s ease-in;
+  transition: opacity .2s ease-in;
+}
+
+body {
+  font-family: 'Fredoka One', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+.animacao {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.animacao p {
+  margin-top: 5rem;
+  width: 27rem;
+  font-size: .9rem;
+}
+
+.animacao p span {
+  color: red;
+  font-weight: bolder;
+  font-size: 105%;
+}
+
+.animation1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  font-size: 6rem;
+  line-height: 80%;
+  letter-spacing: -.3rem;
+  text-align: center;
+}
+
+.animation1 span {
+  margin: 0 auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 24%;
+  padding: 20px;
+}
+
+.animation1 span:nth-child(1) {
+  background-image: -webkit-gradient(linear, left top, right top, from(#d57eeb), to(#fccb90));
+  background-image: linear-gradient(to right, #d57eeb, #fccb90);
+  -webkit-animation: cycle1 5s infinite ease;
+          animation: cycle1 5s infinite ease;
+}
+
+.animation1 span:nth-child(2) {
+  background-image: -webkit-gradient(linear, left top, right top, from(#d57eeb), to(#fccb90));
+  background-image: linear-gradient(to right, #d57eeb, #fccb90);
+  -webkit-animation: cycle1 5s infinite ease;
+          animation: cycle1 5s infinite ease;
+  -webkit-animation-delay: 1.66s;
+          animation-delay: 1.66s;
+}
+
+.animation1 span:nth-child(3) {
+  background-image: -webkit-gradient(linear, left top, right top, from(#d57eeb), to(#fccb90));
+  background-image: linear-gradient(to right, #d57eeb, #fccb90);
+  -webkit-animation: cycle1 5s infinite ease;
+          animation: cycle1 5s infinite ease;
+  -webkit-animation-delay: 3.32s;
+          animation-delay: 3.32s;
+}
+
+@-webkit-keyframes cycle1 {
+  0%, 100% {
+    -webkit-filter: invert(0%);
+            filter: invert(0%);
+  }
+  25%, 75% {
+    -webkit-filter: invert(50%);
+            filter: invert(50%);
+  }
+  50% {
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
+  }
+}
+
+@keyframes cycle1 {
+  0%, 100% {
+    -webkit-filter: invert(0%);
+            filter: invert(0%);
+  }
+  25%, 75% {
+    -webkit-filter: invert(50%);
+            filter: invert(50%);
+  }
+  50% {
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
+  }
+}
+/*# sourceMappingURL=style.css.map */
